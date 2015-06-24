@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1032,7 +1032,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <technology name=""/>
 </technologies>
 </device>
-<device name="3_60" package="PAD-JUMPER-3-NO_YES_SILK_60">
+<device name="3_80" package="PAD-JUMPER-3-NO_YES_SILK_ALL_80">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -1042,7 +1042,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <technology name=""/>
 </technologies>
 </device>
-<device name="3_80" package="PAD-JUMPER-3-NO_YES_SILK_ALL_80">
+<device name="3_60" package="PAD-JUMPER-3-NO_YES_SILK_ALL_60">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
