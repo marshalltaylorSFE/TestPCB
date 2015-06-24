@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.1.0">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.5" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -24,21 +24,21 @@
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
@@ -56,7 +56,7 @@
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
@@ -281,11 +281,8 @@ design rules under a new name.</description>
 <autorouter>
 <pass name="Default">
 <param name="RoutingGrid" value="50mil"/>
-<param name="AutoGrid" value="1"/>
-<param name="Efforts" value="0"/>
-<param name="TopRouterVariant" value="1"/>
 <param name="tpViaShape" value="round"/>
-<param name="PrefDir.1" value="a"/>
+<param name="PrefDir.1" value="|"/>
 <param name="PrefDir.2" value="0"/>
 <param name="PrefDir.3" value="0"/>
 <param name="PrefDir.4" value="0"/>
@@ -300,7 +297,7 @@ design rules under a new name.</description>
 <param name="PrefDir.13" value="0"/>
 <param name="PrefDir.14" value="0"/>
 <param name="PrefDir.15" value="0"/>
-<param name="PrefDir.16" value="a"/>
+<param name="PrefDir.16" value="-"/>
 <param name="cfVia" value="8"/>
 <param name="cfNonPref" value="5"/>
 <param name="cfChangeDir" value="2"/>
@@ -465,60 +462,444 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="21.59" y="54.5099" size="0.02" layer="27" rot="R90"/>
 <attribute name="VALUE" x="23.495" y="53.34" size="0.4064" layer="27" rot="R90"/>
 </element>
-<element name="SJ21" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="16.51" y="72.39" smashed="yes">
-<attribute name="NAME" x="15.602" y="73.66" size="0.4064" layer="25"/>
-<attribute name="VALUE" x="15.602" y="70.739" size="0.4064" layer="27"/>
+<element name="SJ33" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="34.29" y="8.89" smashed="yes" rot="R90">
+<attribute name="NAME" x="33.02" y="7.982" size="0.4064" layer="25" rot="R90"/>
+<attribute name="VALUE" x="35.941" y="7.982" size="0.4064" layer="27" rot="R90"/>
 </element>
-<element name="SJ22" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="21.59" y="72.39" smashed="yes" rot="R90">
-<attribute name="NAME" x="20.32" y="71.482" size="0.4064" layer="25" rot="R90"/>
-<attribute name="VALUE" x="23.241" y="71.482" size="0.4064" layer="27" rot="R90"/>
+<element name="SJ34" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="29.21" y="8.89" smashed="yes">
+<attribute name="NAME" x="28.302" y="10.16" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="28.302" y="7.239" size="0.4064" layer="27"/>
 </element>
-<element name="SJ23" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="16.51" y="67.31" smashed="yes">
-<attribute name="NAME" x="15.24" y="68.58" size="0.4064" layer="25"/>
-<attribute name="VALUE" x="16.4099" y="67.31" size="0.02" layer="27"/>
-<attribute name="VALUE" x="15.24" y="65.405" size="0.4064" layer="27"/>
+<element name="SJ35" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="34.29" y="3.81" smashed="yes" rot="R90">
+<attribute name="NAME" x="33.02" y="2.54" size="0.4064" layer="25" rot="R90"/>
+<attribute name="VALUE" x="34.29" y="3.7099" size="0.02" layer="27" rot="R90"/>
+<attribute name="VALUE" x="36.195" y="2.54" size="0.4064" layer="27" rot="R90"/>
 </element>
-<element name="SJ24" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="21.59" y="67.31" smashed="yes" rot="R90">
-<attribute name="NAME" x="20.32" y="66.04" size="0.4064" layer="25" rot="R90"/>
-<attribute name="VALUE" x="21.59" y="67.2099" size="0.02" layer="27" rot="R90"/>
-<attribute name="VALUE" x="23.495" y="66.04" size="0.4064" layer="27" rot="R90"/>
+<element name="SJ36" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="29.21" y="3.81" smashed="yes">
+<attribute name="NAME" x="27.94" y="5.08" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="29.1099" y="3.81" size="0.02" layer="27"/>
+<attribute name="VALUE" x="27.94" y="1.905" size="0.4064" layer="27"/>
 </element>
-<element name="SJ25" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="16.51" y="85.09" smashed="yes">
-<attribute name="NAME" x="15.602" y="86.36" size="0.4064" layer="25"/>
-<attribute name="VALUE" x="15.602" y="83.439" size="0.4064" layer="27"/>
+<element name="SJ37" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="29.21" y="21.59" smashed="yes">
+<attribute name="NAME" x="28.302" y="22.86" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="28.302" y="19.939" size="0.4064" layer="27"/>
 </element>
-<element name="SJ26" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="21.59" y="85.09" smashed="yes" rot="R90">
-<attribute name="NAME" x="20.32" y="84.182" size="0.4064" layer="25" rot="R90"/>
-<attribute name="VALUE" x="23.241" y="84.182" size="0.4064" layer="27" rot="R90"/>
+<element name="SJ38" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="34.29" y="21.59" smashed="yes" rot="R90">
+<attribute name="NAME" x="33.02" y="20.682" size="0.4064" layer="25" rot="R90"/>
+<attribute name="VALUE" x="35.941" y="20.682" size="0.4064" layer="27" rot="R90"/>
 </element>
-<element name="SJ27" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="16.51" y="80.01" smashed="yes">
-<attribute name="NAME" x="15.24" y="81.28" size="0.4064" layer="25"/>
-<attribute name="VALUE" x="16.4099" y="80.01" size="0.02" layer="27"/>
-<attribute name="VALUE" x="15.24" y="78.105" size="0.4064" layer="27"/>
+<element name="SJ39" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="29.21" y="16.51" smashed="yes">
+<attribute name="NAME" x="27.94" y="17.78" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="29.1099" y="16.51" size="0.02" layer="27"/>
+<attribute name="VALUE" x="27.94" y="14.605" size="0.4064" layer="27"/>
 </element>
-<element name="SJ28" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="21.59" y="80.01" smashed="yes" rot="R90">
-<attribute name="NAME" x="20.32" y="78.74" size="0.4064" layer="25" rot="R90"/>
-<attribute name="VALUE" x="21.59" y="79.9099" size="0.02" layer="27" rot="R90"/>
-<attribute name="VALUE" x="23.495" y="78.74" size="0.4064" layer="27" rot="R90"/>
+<element name="SJ40" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="34.29" y="16.51" smashed="yes" rot="R90">
+<attribute name="NAME" x="33.02" y="15.24" size="0.4064" layer="25" rot="R90"/>
+<attribute name="VALUE" x="34.29" y="16.4099" size="0.02" layer="27" rot="R90"/>
+<attribute name="VALUE" x="36.195" y="15.24" size="0.4064" layer="27" rot="R90"/>
 </element>
-<element name="SJ29" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="16.51" y="97.79" smashed="yes">
-<attribute name="NAME" x="15.602" y="99.06" size="0.4064" layer="25"/>
-<attribute name="VALUE" x="15.602" y="96.139" size="0.4064" layer="27"/>
+<element name="SJ41" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="29.21" y="34.29" smashed="yes">
+<attribute name="NAME" x="28.302" y="35.56" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="28.302" y="32.639" size="0.4064" layer="27"/>
 </element>
-<element name="SJ30" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="21.59" y="97.79" smashed="yes" rot="R90">
-<attribute name="NAME" x="20.32" y="96.882" size="0.4064" layer="25" rot="R90"/>
-<attribute name="VALUE" x="23.241" y="96.882" size="0.4064" layer="27" rot="R90"/>
+<element name="SJ42" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="34.29" y="34.29" smashed="yes" rot="R90">
+<attribute name="NAME" x="33.02" y="33.382" size="0.4064" layer="25" rot="R90"/>
+<attribute name="VALUE" x="35.941" y="33.382" size="0.4064" layer="27" rot="R90"/>
 </element>
-<element name="SJ31" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="16.51" y="92.71" smashed="yes">
-<attribute name="NAME" x="15.24" y="93.98" size="0.4064" layer="25"/>
-<attribute name="VALUE" x="16.4099" y="92.71" size="0.02" layer="27"/>
-<attribute name="VALUE" x="15.24" y="90.805" size="0.4064" layer="27"/>
+<element name="SJ43" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="29.21" y="29.21" smashed="yes">
+<attribute name="NAME" x="27.94" y="30.48" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="29.1099" y="29.21" size="0.02" layer="27"/>
+<attribute name="VALUE" x="27.94" y="27.305" size="0.4064" layer="27"/>
 </element>
-<element name="SJ32" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="21.59" y="92.71" smashed="yes" rot="R90">
-<attribute name="NAME" x="20.32" y="91.44" size="0.4064" layer="25" rot="R90"/>
-<attribute name="VALUE" x="21.59" y="92.6099" size="0.02" layer="27" rot="R90"/>
-<attribute name="VALUE" x="23.495" y="91.44" size="0.4064" layer="27" rot="R90"/>
+<element name="SJ44" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="34.29" y="29.21" smashed="yes" rot="R90">
+<attribute name="NAME" x="33.02" y="27.94" size="0.4064" layer="25" rot="R90"/>
+<attribute name="VALUE" x="34.29" y="29.1099" size="0.02" layer="27" rot="R90"/>
+<attribute name="VALUE" x="36.195" y="27.94" size="0.4064" layer="27" rot="R90"/>
 </element>
+<element name="SJ45" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="34.29" y="46.99" smashed="yes" rot="R90">
+<attribute name="NAME" x="33.02" y="46.082" size="0.4064" layer="25" rot="R90"/>
+<attribute name="VALUE" x="35.941" y="46.082" size="0.4064" layer="27" rot="R90"/>
+</element>
+<element name="SJ46" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="29.21" y="46.99" smashed="yes">
+<attribute name="NAME" x="28.302" y="48.26" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="28.302" y="45.339" size="0.4064" layer="27"/>
+</element>
+<element name="SJ47" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="29.21" y="41.91" smashed="yes">
+<attribute name="NAME" x="27.94" y="43.18" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="29.1099" y="41.91" size="0.02" layer="27"/>
+<attribute name="VALUE" x="27.94" y="40.005" size="0.4064" layer="27"/>
+</element>
+<element name="SJ48" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="34.29" y="41.91" smashed="yes" rot="R90">
+<attribute name="NAME" x="33.02" y="40.64" size="0.4064" layer="25" rot="R90"/>
+<attribute name="VALUE" x="34.29" y="41.8099" size="0.02" layer="27" rot="R90"/>
+<attribute name="VALUE" x="36.195" y="40.64" size="0.4064" layer="27" rot="R90"/>
+</element>
+<element name="SJ49" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="29.21" y="59.69" smashed="yes">
+<attribute name="NAME" x="28.302" y="60.96" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="28.302" y="58.039" size="0.4064" layer="27"/>
+</element>
+<element name="SJ50" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="34.29" y="59.69" smashed="yes">
+<attribute name="NAME" x="33.382" y="60.96" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="33.382" y="58.039" size="0.4064" layer="27"/>
+</element>
+<element name="SJ51" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="29.21" y="54.61" smashed="yes">
+<attribute name="NAME" x="27.94" y="55.88" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="29.1099" y="54.61" size="0.02" layer="27"/>
+<attribute name="VALUE" x="27.94" y="52.705" size="0.4064" layer="27"/>
+</element>
+<element name="SJ52" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="34.29" y="54.61" smashed="yes" rot="R90">
+<attribute name="NAME" x="33.02" y="53.34" size="0.4064" layer="25" rot="R90"/>
+<attribute name="VALUE" x="34.29" y="54.5099" size="0.02" layer="27" rot="R90"/>
+<attribute name="VALUE" x="36.195" y="53.34" size="0.4064" layer="27" rot="R90"/>
+</element>
+<element name="SJ65" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="46.99" y="46.99" smashed="yes" rot="R90">
+<attribute name="NAME" x="45.72" y="46.082" size="0.4064" layer="25" rot="R90"/>
+<attribute name="VALUE" x="48.641" y="46.082" size="0.4064" layer="27" rot="R90"/>
+</element>
+<element name="SJ66" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="41.91" y="46.99" smashed="yes">
+<attribute name="NAME" x="41.002" y="48.26" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="41.002" y="45.339" size="0.4064" layer="27"/>
+</element>
+<element name="SJ67" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="41.91" y="41.91" smashed="yes">
+<attribute name="NAME" x="40.64" y="43.18" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="41.8099" y="41.91" size="0.02" layer="27"/>
+<attribute name="VALUE" x="40.64" y="40.005" size="0.4064" layer="27"/>
+</element>
+<element name="SJ68" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="46.99" y="41.91" smashed="yes" rot="R90">
+<attribute name="NAME" x="45.72" y="40.64" size="0.4064" layer="25" rot="R90"/>
+<attribute name="VALUE" x="46.99" y="41.8099" size="0.02" layer="27" rot="R90"/>
+<attribute name="VALUE" x="48.895" y="40.64" size="0.4064" layer="27" rot="R90"/>
+</element>
+<element name="SJ69" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="41.91" y="59.69" smashed="yes">
+<attribute name="NAME" x="41.002" y="60.96" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="41.002" y="58.039" size="0.4064" layer="27"/>
+</element>
+<element name="SJ70" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="46.99" y="59.69" smashed="yes">
+<attribute name="NAME" x="46.082" y="60.96" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="46.082" y="58.039" size="0.4064" layer="27"/>
+</element>
+<element name="SJ71" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="41.91" y="54.61" smashed="yes">
+<attribute name="NAME" x="40.64" y="55.88" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="41.8099" y="54.61" size="0.02" layer="27"/>
+<attribute name="VALUE" x="40.64" y="52.705" size="0.4064" layer="27"/>
+</element>
+<element name="SJ72" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="46.99" y="54.61" smashed="yes" rot="R90">
+<attribute name="NAME" x="45.72" y="53.34" size="0.4064" layer="25" rot="R90"/>
+<attribute name="VALUE" x="46.99" y="54.5099" size="0.02" layer="27" rot="R90"/>
+<attribute name="VALUE" x="48.895" y="53.34" size="0.4064" layer="27" rot="R90"/>
+</element>
+<element name="SJ73" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="59.69" y="8.89" smashed="yes" rot="R90">
+<attribute name="NAME" x="58.42" y="7.982" size="0.4064" layer="25" rot="R90"/>
+<attribute name="VALUE" x="61.341" y="7.982" size="0.4064" layer="27" rot="R90"/>
+</element>
+<element name="SJ74" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="54.61" y="8.89" smashed="yes">
+<attribute name="NAME" x="53.702" y="10.16" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="53.702" y="7.239" size="0.4064" layer="27"/>
+</element>
+<element name="SJ75" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="59.69" y="3.81" smashed="yes" rot="R90">
+<attribute name="NAME" x="58.42" y="2.54" size="0.4064" layer="25" rot="R90"/>
+<attribute name="VALUE" x="59.69" y="3.7099" size="0.02" layer="27" rot="R90"/>
+<attribute name="VALUE" x="61.595" y="2.54" size="0.4064" layer="27" rot="R90"/>
+</element>
+<element name="SJ76" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="54.61" y="3.81" smashed="yes">
+<attribute name="NAME" x="53.34" y="5.08" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="54.5099" y="3.81" size="0.02" layer="27"/>
+<attribute name="VALUE" x="53.34" y="1.905" size="0.4064" layer="27"/>
+</element>
+<element name="SJ77" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="54.61" y="21.59" smashed="yes">
+<attribute name="NAME" x="53.702" y="22.86" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="53.702" y="19.939" size="0.4064" layer="27"/>
+</element>
+<element name="SJ78" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="59.69" y="21.59" smashed="yes" rot="R90">
+<attribute name="NAME" x="58.42" y="20.682" size="0.4064" layer="25" rot="R90"/>
+<attribute name="VALUE" x="61.341" y="20.682" size="0.4064" layer="27" rot="R90"/>
+</element>
+<element name="SJ79" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="54.61" y="16.51" smashed="yes">
+<attribute name="NAME" x="53.34" y="17.78" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="54.5099" y="16.51" size="0.02" layer="27"/>
+<attribute name="VALUE" x="53.34" y="14.605" size="0.4064" layer="27"/>
+</element>
+<element name="SJ80" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="59.69" y="16.51" smashed="yes" rot="R90">
+<attribute name="NAME" x="58.42" y="15.24" size="0.4064" layer="25" rot="R90"/>
+<attribute name="VALUE" x="59.69" y="16.4099" size="0.02" layer="27" rot="R90"/>
+<attribute name="VALUE" x="61.595" y="15.24" size="0.4064" layer="27" rot="R90"/>
+</element>
+<element name="SJ81" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="54.61" y="34.29" smashed="yes">
+<attribute name="NAME" x="53.702" y="35.56" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="53.702" y="32.639" size="0.4064" layer="27"/>
+</element>
+<element name="SJ82" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="59.69" y="34.29" smashed="yes" rot="R90">
+<attribute name="NAME" x="58.42" y="33.382" size="0.4064" layer="25" rot="R90"/>
+<attribute name="VALUE" x="61.341" y="33.382" size="0.4064" layer="27" rot="R90"/>
+</element>
+<element name="SJ83" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="54.61" y="29.21" smashed="yes">
+<attribute name="NAME" x="53.34" y="30.48" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="54.5099" y="29.21" size="0.02" layer="27"/>
+<attribute name="VALUE" x="53.34" y="27.305" size="0.4064" layer="27"/>
+</element>
+<element name="SJ84" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="59.69" y="29.21" smashed="yes" rot="R90">
+<attribute name="NAME" x="58.42" y="27.94" size="0.4064" layer="25" rot="R90"/>
+<attribute name="VALUE" x="59.69" y="29.1099" size="0.02" layer="27" rot="R90"/>
+<attribute name="VALUE" x="61.595" y="27.94" size="0.4064" layer="27" rot="R90"/>
+</element>
+<element name="SJ97" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="67.31" y="21.59" smashed="yes">
+<attribute name="NAME" x="66.402" y="22.86" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="66.402" y="19.939" size="0.4064" layer="27"/>
+</element>
+<element name="SJ98" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="72.39" y="21.59" smashed="yes" rot="R90">
+<attribute name="NAME" x="71.12" y="20.682" size="0.4064" layer="25" rot="R90"/>
+<attribute name="VALUE" x="74.041" y="20.682" size="0.4064" layer="27" rot="R90"/>
+</element>
+<element name="SJ99" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="67.31" y="16.51" smashed="yes">
+<attribute name="NAME" x="66.04" y="17.78" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="67.2099" y="16.51" size="0.02" layer="27"/>
+<attribute name="VALUE" x="66.04" y="14.605" size="0.4064" layer="27"/>
+</element>
+<element name="SJ100" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="72.39" y="16.51" smashed="yes" rot="R90">
+<attribute name="NAME" x="71.12" y="15.24" size="0.4064" layer="25" rot="R90"/>
+<attribute name="VALUE" x="72.39" y="16.4099" size="0.02" layer="27" rot="R90"/>
+<attribute name="VALUE" x="74.295" y="15.24" size="0.4064" layer="27" rot="R90"/>
+</element>
+<element name="SJ101" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="67.31" y="34.29" smashed="yes">
+<attribute name="NAME" x="66.402" y="35.56" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="66.402" y="32.639" size="0.4064" layer="27"/>
+</element>
+<element name="SJ102" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="72.39" y="34.29" smashed="yes" rot="R90">
+<attribute name="NAME" x="71.12" y="33.382" size="0.4064" layer="25" rot="R90"/>
+<attribute name="VALUE" x="74.041" y="33.382" size="0.4064" layer="27" rot="R90"/>
+</element>
+<element name="SJ103" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="67.31" y="29.21" smashed="yes">
+<attribute name="NAME" x="66.04" y="30.48" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="67.2099" y="29.21" size="0.02" layer="27"/>
+<attribute name="VALUE" x="66.04" y="27.305" size="0.4064" layer="27"/>
+</element>
+<element name="SJ104" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="72.39" y="29.21" smashed="yes" rot="R90">
+<attribute name="NAME" x="71.12" y="27.94" size="0.4064" layer="25" rot="R90"/>
+<attribute name="VALUE" x="72.39" y="29.1099" size="0.02" layer="27" rot="R90"/>
+<attribute name="VALUE" x="74.295" y="27.94" size="0.4064" layer="27" rot="R90"/>
+</element>
+<element name="SJ105" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="72.39" y="46.99" smashed="yes" rot="R90">
+<attribute name="NAME" x="71.12" y="46.082" size="0.4064" layer="25" rot="R90"/>
+<attribute name="VALUE" x="74.041" y="46.082" size="0.4064" layer="27" rot="R90"/>
+</element>
+<element name="SJ106" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="67.31" y="46.99" smashed="yes">
+<attribute name="NAME" x="66.402" y="48.26" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="66.402" y="45.339" size="0.4064" layer="27"/>
+</element>
+<element name="SJ107" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="67.31" y="41.91" smashed="yes">
+<attribute name="NAME" x="66.04" y="43.18" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="67.2099" y="41.91" size="0.02" layer="27"/>
+<attribute name="VALUE" x="66.04" y="40.005" size="0.4064" layer="27"/>
+</element>
+<element name="SJ108" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="72.39" y="41.91" smashed="yes" rot="R90">
+<attribute name="NAME" x="71.12" y="40.64" size="0.4064" layer="25" rot="R90"/>
+<attribute name="VALUE" x="72.39" y="41.8099" size="0.02" layer="27" rot="R90"/>
+<attribute name="VALUE" x="74.295" y="40.64" size="0.4064" layer="27" rot="R90"/>
+</element>
+<element name="SJ109" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="67.31" y="59.69" smashed="yes">
+<attribute name="NAME" x="66.402" y="60.96" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="66.402" y="58.039" size="0.4064" layer="27"/>
+</element>
+<element name="SJ110" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="72.39" y="59.69" smashed="yes">
+<attribute name="NAME" x="71.482" y="60.96" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="71.482" y="58.039" size="0.4064" layer="27"/>
+</element>
+<element name="SJ111" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="67.31" y="54.61" smashed="yes">
+<attribute name="NAME" x="66.04" y="55.88" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="67.2099" y="54.61" size="0.02" layer="27"/>
+<attribute name="VALUE" x="66.04" y="52.705" size="0.4064" layer="27"/>
+</element>
+<element name="SJ112" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="72.39" y="54.61" smashed="yes" rot="R90">
+<attribute name="NAME" x="71.12" y="53.34" size="0.4064" layer="25" rot="R90"/>
+<attribute name="VALUE" x="72.39" y="54.5099" size="0.02" layer="27" rot="R90"/>
+<attribute name="VALUE" x="74.295" y="53.34" size="0.4064" layer="27" rot="R90"/>
+</element>
+<element name="SJ113" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="85.09" y="8.89" smashed="yes" rot="R90">
+<attribute name="NAME" x="83.82" y="7.982" size="0.4064" layer="25" rot="R90"/>
+<attribute name="VALUE" x="86.741" y="7.982" size="0.4064" layer="27" rot="R90"/>
+</element>
+<element name="SJ114" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="80.01" y="8.89" smashed="yes">
+<attribute name="NAME" x="79.102" y="10.16" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="79.102" y="7.239" size="0.4064" layer="27"/>
+</element>
+<element name="SJ115" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="85.09" y="3.81" smashed="yes" rot="R90">
+<attribute name="NAME" x="83.82" y="2.54" size="0.4064" layer="25" rot="R90"/>
+<attribute name="VALUE" x="85.09" y="3.7099" size="0.02" layer="27" rot="R90"/>
+<attribute name="VALUE" x="86.995" y="2.54" size="0.4064" layer="27" rot="R90"/>
+</element>
+<element name="SJ116" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="80.01" y="3.81" smashed="yes">
+<attribute name="NAME" x="78.74" y="5.08" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="79.9099" y="3.81" size="0.02" layer="27"/>
+<attribute name="VALUE" x="78.74" y="1.905" size="0.4064" layer="27"/>
+</element>
+<element name="SJ129" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="80.01" y="59.69" smashed="yes">
+<attribute name="NAME" x="79.102" y="60.96" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="79.102" y="58.039" size="0.4064" layer="27"/>
+</element>
+<element name="SJ130" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="85.09" y="59.69" smashed="yes">
+<attribute name="NAME" x="84.182" y="60.96" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="84.182" y="58.039" size="0.4064" layer="27"/>
+</element>
+<element name="SJ131" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="80.01" y="54.61" smashed="yes">
+<attribute name="NAME" x="78.74" y="55.88" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="79.9099" y="54.61" size="0.02" layer="27"/>
+<attribute name="VALUE" x="78.74" y="52.705" size="0.4064" layer="27"/>
+</element>
+<element name="SJ132" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="85.09" y="54.61" smashed="yes" rot="R90">
+<attribute name="NAME" x="83.82" y="53.34" size="0.4064" layer="25" rot="R90"/>
+<attribute name="VALUE" x="85.09" y="54.5099" size="0.02" layer="27" rot="R90"/>
+<attribute name="VALUE" x="86.995" y="53.34" size="0.4064" layer="27" rot="R90"/>
+</element>
+<element name="SJ133" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="97.79" y="8.89" smashed="yes" rot="R90">
+<attribute name="NAME" x="96.52" y="7.982" size="0.4064" layer="25" rot="R90"/>
+<attribute name="VALUE" x="99.441" y="7.982" size="0.4064" layer="27" rot="R90"/>
+</element>
+<element name="SJ134" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="92.71" y="8.89" smashed="yes">
+<attribute name="NAME" x="91.802" y="10.16" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="91.802" y="7.239" size="0.4064" layer="27"/>
+</element>
+<element name="SJ135" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="97.79" y="3.81" smashed="yes" rot="R90">
+<attribute name="NAME" x="96.52" y="2.54" size="0.4064" layer="25" rot="R90"/>
+<attribute name="VALUE" x="97.79" y="3.7099" size="0.02" layer="27" rot="R90"/>
+<attribute name="VALUE" x="99.695" y="2.54" size="0.4064" layer="27" rot="R90"/>
+</element>
+<element name="SJ136" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="92.71" y="3.81" smashed="yes">
+<attribute name="NAME" x="91.44" y="5.08" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="92.6099" y="3.81" size="0.02" layer="27"/>
+<attribute name="VALUE" x="91.44" y="1.905" size="0.4064" layer="27"/>
+</element>
+<element name="SJ137" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="92.71" y="21.59" smashed="yes">
+<attribute name="NAME" x="91.802" y="22.86" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="91.802" y="19.939" size="0.4064" layer="27"/>
+</element>
+<element name="SJ138" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="97.79" y="21.59" smashed="yes" rot="R90">
+<attribute name="NAME" x="96.52" y="20.682" size="0.4064" layer="25" rot="R90"/>
+<attribute name="VALUE" x="99.441" y="20.682" size="0.4064" layer="27" rot="R90"/>
+</element>
+<element name="SJ139" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="92.71" y="16.51" smashed="yes">
+<attribute name="NAME" x="91.44" y="17.78" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="92.6099" y="16.51" size="0.02" layer="27"/>
+<attribute name="VALUE" x="91.44" y="14.605" size="0.4064" layer="27"/>
+</element>
+<element name="SJ140" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="97.79" y="16.51" smashed="yes" rot="R90">
+<attribute name="NAME" x="96.52" y="15.24" size="0.4064" layer="25" rot="R90"/>
+<attribute name="VALUE" x="97.79" y="16.4099" size="0.02" layer="27" rot="R90"/>
+<attribute name="VALUE" x="99.695" y="15.24" size="0.4064" layer="27" rot="R90"/>
+</element>
+<element name="SJ141" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="92.71" y="34.29" smashed="yes">
+<attribute name="NAME" x="91.802" y="35.56" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="91.802" y="32.639" size="0.4064" layer="27"/>
+</element>
+<element name="SJ142" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="97.79" y="34.29" smashed="yes" rot="R90">
+<attribute name="NAME" x="96.52" y="33.382" size="0.4064" layer="25" rot="R90"/>
+<attribute name="VALUE" x="99.441" y="33.382" size="0.4064" layer="27" rot="R90"/>
+</element>
+<element name="SJ143" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="92.71" y="29.21" smashed="yes">
+<attribute name="NAME" x="91.44" y="30.48" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="92.6099" y="29.21" size="0.02" layer="27"/>
+<attribute name="VALUE" x="91.44" y="27.305" size="0.4064" layer="27"/>
+</element>
+<element name="SJ144" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="97.79" y="29.21" smashed="yes" rot="R90">
+<attribute name="NAME" x="96.52" y="27.94" size="0.4064" layer="25" rot="R90"/>
+<attribute name="VALUE" x="97.79" y="29.1099" size="0.02" layer="27" rot="R90"/>
+<attribute name="VALUE" x="99.695" y="27.94" size="0.4064" layer="27" rot="R90"/>
+</element>
+<element name="SJ145" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="97.79" y="46.99" smashed="yes" rot="R90">
+<attribute name="NAME" x="96.52" y="46.082" size="0.4064" layer="25" rot="R90"/>
+<attribute name="VALUE" x="99.441" y="46.082" size="0.4064" layer="27" rot="R90"/>
+</element>
+<element name="SJ146" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="92.71" y="46.99" smashed="yes">
+<attribute name="NAME" x="91.802" y="48.26" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="91.802" y="45.339" size="0.4064" layer="27"/>
+</element>
+<element name="SJ147" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="92.71" y="41.91" smashed="yes">
+<attribute name="NAME" x="91.44" y="43.18" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="92.6099" y="41.91" size="0.02" layer="27"/>
+<attribute name="VALUE" x="91.44" y="40.005" size="0.4064" layer="27"/>
+</element>
+<element name="SJ148" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="97.79" y="41.91" smashed="yes" rot="R90">
+<attribute name="NAME" x="96.52" y="40.64" size="0.4064" layer="25" rot="R90"/>
+<attribute name="VALUE" x="97.79" y="41.8099" size="0.02" layer="27" rot="R90"/>
+<attribute name="VALUE" x="99.695" y="40.64" size="0.4064" layer="27" rot="R90"/>
+</element>
+<element name="SJ149" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="92.71" y="59.69" smashed="yes">
+<attribute name="NAME" x="91.802" y="60.96" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="91.802" y="58.039" size="0.4064" layer="27"/>
+</element>
+<element name="SJ150" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="97.79" y="59.69" smashed="yes">
+<attribute name="NAME" x="96.882" y="60.96" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="96.882" y="58.039" size="0.4064" layer="27"/>
+</element>
+<element name="SJ151" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="92.71" y="54.61" smashed="yes">
+<attribute name="NAME" x="91.44" y="55.88" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="92.6099" y="54.61" size="0.02" layer="27"/>
+<attribute name="VALUE" x="91.44" y="52.705" size="0.4064" layer="27"/>
+</element>
+<element name="SJ152" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="97.79" y="54.61" smashed="yes" rot="R90">
+<attribute name="NAME" x="96.52" y="53.34" size="0.4064" layer="25" rot="R90"/>
+<attribute name="VALUE" x="97.79" y="54.5099" size="0.02" layer="27" rot="R90"/>
+<attribute name="VALUE" x="99.695" y="53.34" size="0.4064" layer="27" rot="R90"/>
+</element>
+<element name="SJ21" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="12.7" y="-38.1"/>
+<element name="SJ22" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="25.4" y="-38.1"/>
+<element name="SJ23" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="-12.7" y="-12.7"/>
+<element name="SJ24" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="0" y="-12.7"/>
+<element name="SJ25" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="38.1" y="-38.1"/>
+<element name="SJ26" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="-12.7" y="-50.8"/>
+<element name="SJ27" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="12.7" y="-12.7"/>
+<element name="SJ28" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="25.4" y="-12.7"/>
+<element name="SJ29" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="0" y="-50.8"/>
+<element name="SJ30" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="12.7" y="-50.8"/>
+<element name="SJ31" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="-12.7" y="-25.4"/>
+<element name="SJ32" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="0" y="-25.4"/>
+<element name="SJ53" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="25.4" y="-50.8"/>
+<element name="SJ54" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="38.1" y="-50.8"/>
+<element name="SJ55" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="12.7" y="-25.4"/>
+<element name="SJ56" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="25.4" y="-25.4"/>
+<element name="SJ57" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="-12.7" y="-63.5"/>
+<element name="SJ58" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="0" y="-63.5"/>
+<element name="SJ59" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="-12.7" y="-38.1"/>
+<element name="SJ60" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="0" y="-38.1"/>
+<element name="SJ61" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="12.7" y="-101.6"/>
+<element name="SJ62" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="25.4" y="-101.6"/>
+<element name="SJ63" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="-12.7" y="-76.2"/>
+<element name="SJ64" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="0" y="-76.2"/>
+<element name="SJ85" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="38.1" y="-101.6"/>
+<element name="SJ86" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="-12.7" y="-114.3"/>
+<element name="SJ87" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="12.7" y="-76.2"/>
+<element name="SJ88" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="25.4" y="-76.2"/>
+<element name="SJ89" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="0" y="-114.3"/>
+<element name="SJ90" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="12.7" y="-114.3"/>
+<element name="SJ91" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="-12.7" y="-88.9"/>
+<element name="SJ92" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="0" y="-88.9"/>
+<element name="SJ93" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="25.4" y="-114.3"/>
+<element name="SJ94" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="38.1" y="-114.3"/>
+<element name="SJ95" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="12.7" y="-88.9"/>
+<element name="SJ96" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="25.4" y="-88.9"/>
+<element name="SJ117" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="-12.7" y="-127"/>
+<element name="SJ118" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="0" y="-127"/>
+<element name="SJ119" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="-12.7" y="-101.6"/>
+<element name="SJ120" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="0" y="-101.6"/>
+<element name="SJ121" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="12.7" y="-165.1"/>
+<element name="SJ122" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="25.4" y="-165.1"/>
+<element name="SJ123" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="-12.7" y="-139.7"/>
+<element name="SJ124" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="0" y="-139.7"/>
+<element name="SJ125" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="38.1" y="-165.1"/>
+<element name="SJ126" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="-12.7" y="-177.8"/>
+<element name="SJ127" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="12.7" y="-139.7"/>
+<element name="SJ128" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="25.4" y="-139.7"/>
+<element name="SJ153" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="0" y="-177.8"/>
+<element name="SJ154" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="12.7" y="-177.8"/>
+<element name="SJ155" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="-12.7" y="-152.4"/>
+<element name="SJ156" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="0" y="-152.4"/>
+<element name="SJ157" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="25.4" y="-177.8"/>
+<element name="SJ158" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="38.1" y="-177.8"/>
+<element name="SJ159" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="12.7" y="-152.4"/>
+<element name="SJ160" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="25.4" y="-152.4"/>
+<element name="SJ161" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="-12.7" y="-190.5"/>
+<element name="SJ162" library="TestAperatures" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="0" y="-190.5"/>
+<element name="SJ163" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="-12.7" y="-165.1"/>
+<element name="SJ164" library="TestAperatures" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="0" y="-165.1"/>
 </elements>
 <signals>
 <signal name="GND">
