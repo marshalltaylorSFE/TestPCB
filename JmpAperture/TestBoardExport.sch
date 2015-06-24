@@ -924,10 +924,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND14" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND15" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND16" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="SJ21" library="TestAperatures" deviceset="JUMPER-PAD-3-NO" device="YES_SILK"/>
-<part name="SJ22" library="TestAperatures" deviceset="JUMPER-PAD-3-NO" device="YES_SILK"/>
-<part name="SJ23" library="TestAperatures" deviceset="JUMPER-PAD-3-NO" device="YES_SILK"/>
-<part name="SJ24" library="TestAperatures" deviceset="JUMPER-PAD-3-NO" device="YES_SILK"/>
+<part name="SJ21" library="TestAperatures" deviceset="JUMPER-PAD-3-NO" device="3_0" value="JUMPER-PAD-3-NO3_0"/>
+<part name="SJ22" library="TestAperatures" deviceset="JUMPER-PAD-3-NO" device="3_0" value="JUMPER-PAD-3-NO3_0"/>
+<part name="SJ23" library="TestAperatures" deviceset="JUMPER-PAD-3-NO" device="3_0" value="JUMPER-PAD-3-NO3_0"/>
+<part name="SJ24" library="TestAperatures" deviceset="JUMPER-PAD-3-NO" device="3_0" value="JUMPER-PAD-3-NO3_0"/>
 <part name="SJ25" library="TestAperatures" deviceset="JUMPER-PAD-3-NO" device="3_0" value="JUMPER-PAD-3-NO3_0"/>
 <part name="SJ26" library="TestAperatures" deviceset="JUMPER-PAD-3-NO" device="3_0" value="JUMPER-PAD-3-NO3_0"/>
 <part name="SJ27" library="TestAperatures" deviceset="JUMPER-PAD-3-NO" device="3_0" value="JUMPER-PAD-3-NO3_0"/>
@@ -1016,10 +1016,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND30" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND31" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND32" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="SJ73" library="TestAperatures" deviceset="JUMPER-PAD-3-NO" device="YES_SILK"/>
-<part name="SJ74" library="TestAperatures" deviceset="JUMPER-PAD-3-NO" device="YES_SILK"/>
-<part name="SJ75" library="TestAperatures" deviceset="JUMPER-PAD-3-NO" device="YES_SILK"/>
-<part name="SJ76" library="TestAperatures" deviceset="JUMPER-PAD-3-NO" device="YES_SILK"/>
+<part name="SJ73" library="TestAperatures" deviceset="JUMPER-PAD-3-NO" device="3_20" value="JUMPER-PAD-3-NO3_20"/>
+<part name="SJ74" library="TestAperatures" deviceset="JUMPER-PAD-3-NO" device="3_20" value="JUMPER-PAD-3-NO3_20"/>
+<part name="SJ75" library="TestAperatures" deviceset="JUMPER-PAD-3-NO" device="3_20" value="JUMPER-PAD-3-NO3_20"/>
+<part name="SJ76" library="TestAperatures" deviceset="JUMPER-PAD-3-NO" device="3_20" value="JUMPER-PAD-3-NO3_20"/>
 <part name="SJ77" library="TestAperatures" deviceset="JUMPER-PAD-3-NO" device="3_20" value="JUMPER-PAD-3-NO3_20"/>
 <part name="SJ78" library="TestAperatures" deviceset="JUMPER-PAD-3-NO" device="3_20" value="JUMPER-PAD-3-NO3_20"/>
 <part name="SJ79" library="TestAperatures" deviceset="JUMPER-PAD-3-NO" device="3_20" value="JUMPER-PAD-3-NO3_20"/>
