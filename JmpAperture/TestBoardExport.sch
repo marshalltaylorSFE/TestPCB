@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.1.0">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -350,7 +350,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="-1.27" y="1.27" size="0.4064" layer="25">&gt;NAME</text>
 <text x="-0.1001" y="0" size="0.02" layer="27">&gt;VALUE</text>
 <text x="-1.27" y="-1.905" size="0.4064" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.4064" y1="-0.762" x2="1.3716" y2="0.762" layer="31"/>
+<rectangle x1="-0.4064" y1="-0.8128" x2="1.3208" y2="0.8128" layer="31"/>
 </package>
 <package name="PAD-JUMPER-3-NO_YES_SILK_40">
 <wire x1="1.27" y1="-1.016" x2="-1.27" y2="-1.016" width="0.1524" layer="21"/>
@@ -367,7 +367,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="-1.27" y="1.27" size="0.4064" layer="25">&gt;NAME</text>
 <text x="-0.1001" y="0" size="0.02" layer="27">&gt;VALUE</text>
 <text x="-1.27" y="-1.905" size="0.4064" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.4064" y1="-0.889" x2="1.6002" y2="0.889" layer="31"/>
+<rectangle x1="-0.4064" y1="-0.9398" x2="1.524" y2="0.9398" layer="31"/>
 </package>
 <package name="PAD-JUMPER-3-NO_YES_SILK_60">
 <wire x1="1.27" y1="-1.016" x2="-1.27" y2="-1.016" width="0.1524" layer="21"/>
@@ -384,7 +384,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="-1.27" y="1.27" size="0.4064" layer="25">&gt;NAME</text>
 <text x="-0.1001" y="0" size="0.02" layer="27">&gt;VALUE</text>
 <text x="-1.27" y="-1.905" size="0.4064" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.4064" y1="-1.016" x2="1.8288" y2="1.016" layer="31"/>
+<rectangle x1="-0.4064" y1="-1.1176" x2="1.651" y2="1.1176" layer="31"/>
 </package>
 <package name="PAD-JUMPER-3-NO_YES_SILK_ALL_60">
 <wire x1="1.27" y1="-1.016" x2="-1.27" y2="-1.016" width="0.1524" layer="21"/>
@@ -401,7 +401,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="-1.27" y="1.27" size="0.4064" layer="25">&gt;NAME</text>
 <text x="-0.1001" y="0" size="0.02" layer="27">&gt;VALUE</text>
 <text x="-1.27" y="-1.905" size="0.4064" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.8288" y1="-1.016" x2="1.8288" y2="1.016" layer="31"/>
+<rectangle x1="-1.651" y1="-1.1176" x2="1.651" y2="1.1176" layer="31"/>
 </package>
 <package name="PAD-JUMPER-3-NO_YES_SILK_80">
 <wire x1="1.27" y1="-1.016" x2="-1.27" y2="-1.016" width="0.1524" layer="21"/>
@@ -418,7 +418,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="-1.27" y="1.27" size="0.4064" layer="25">&gt;NAME</text>
 <text x="-0.1001" y="0" size="0.02" layer="27">&gt;VALUE</text>
 <text x="-1.27" y="-1.905" size="0.4064" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.4064" y1="-1.143" x2="2.0574" y2="1.143" layer="31"/>
+<rectangle x1="-0.4064" y1="-1.27" x2="1.8034" y2="1.27" layer="31"/>
 </package>
 <package name="PAD-JUMPER-3-NO_YES_SILK_ALL">
 <wire x1="1.27" y1="-1.016" x2="-1.27" y2="-1.016" width="0.1524" layer="21"/>
@@ -452,7 +452,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="-1.27" y="1.27" size="0.4064" layer="25">&gt;NAME</text>
 <text x="-0.1001" y="0" size="0.02" layer="27">&gt;VALUE</text>
 <text x="-1.27" y="-1.905" size="0.4064" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.3716" y1="-0.762" x2="1.3716" y2="0.762" layer="31"/>
+<rectangle x1="-1.3208" y1="-0.8128" x2="1.3208" y2="0.8128" layer="31"/>
 </package>
 <package name="PAD-JUMPER-3-NO_YES_SILK_ALL_40">
 <wire x1="1.27" y1="-1.016" x2="-1.27" y2="-1.016" width="0.1524" layer="21"/>
@@ -469,7 +469,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="-1.27" y="1.27" size="0.4064" layer="25">&gt;NAME</text>
 <text x="-0.1001" y="0" size="0.02" layer="27">&gt;VALUE</text>
 <text x="-1.27" y="-1.905" size="0.4064" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.6002" y1="-0.889" x2="1.6002" y2="0.889" layer="31"/>
+<rectangle x1="-1.524" y1="-0.9398" x2="1.524" y2="0.9398" layer="31"/>
 </package>
 <package name="PAD-JUMPER-3-NO_YES_SILK_ALL_80">
 <wire x1="1.27" y1="-1.016" x2="-1.27" y2="-1.016" width="0.1524" layer="21"/>
@@ -486,7 +486,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="-1.27" y="1.27" size="0.4064" layer="25">&gt;NAME</text>
 <text x="-0.1001" y="0" size="0.02" layer="27">&gt;VALUE</text>
 <text x="-1.27" y="-1.905" size="0.4064" layer="27">&gt;VALUE</text>
-<rectangle x1="-2.0574" y1="-1.143" x2="2.0574" y2="1.143" layer="31"/>
+<rectangle x1="-1.8034" y1="-1.27" x2="1.8034" y2="1.27" layer="31"/>
 </package>
 </packages>
 <symbols>
