@@ -1,0 +1,33 @@
+nother test board?
+Robert Hunke
+Aug 20 (7 days ago)
+to me
+
+Hey Marshall,
+
+We'd like to test reducing the paste amount on the microB connector as well as the drill hits for the bosses. Recently our yield on this connector has been very poor. Lots of jumpers.
+
+Do you think you might have time for this? No worries if you don't, just let me know, I enjoyed working on the jumpers with you. Thanks!
+Marshall Taylor <marshall.taylor@sparkfun.com>
+	
+Aug 20 (7 days ago)
+		
+to Robert
+That doesn't sound too bad.  Could probably have one with like 5 or 10 alternate shapes by next friday?  What's the suspect production ID?
+Robert Hunke
+	
+Aug 21 (6 days ago)
+		
+to me
+Production SKUs are:
+
+CONN-11152
+CONN-11752
+CONN-11794
+
+Products that may have problems:
+Lipo charger
+power cell booster
+ioio
+pro micro 5v/3.3v
+freesoc2
